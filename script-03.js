@@ -19,8 +19,12 @@ const vacationDestination = "Paris";
 // Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 // Expected output: "Woohoo, excellent choice"
 
-
-
+if (vacationDestination === "Paris") {
+    console.log("Woohoo, excellent choice"); 
+}
+else { 
+    console.log("Awww, but that's still cool"); 
+}
 
 
 
@@ -31,7 +35,7 @@ const vacationDestination = "Paris";
 //
 
 // Create a const variable called studentGradeValue and assign it to the number 55
-
+const studentGradeValue = 55;
 
 // Create a let variable called studentGradeLetter and assign it to null
 // (since we don't know what it is just yet - we're going to calculate it next
@@ -47,19 +51,24 @@ let studentGradeLetter = null;
 //  ELSE studentGradeLetter = "F"
 //
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if (studentGradeValue >= 90) {
+    console.log("A+");
+}
+else if (studentGradeValue >= 80) {
+    console.log("A");
+}
+else if (studentGradeValue >= 70) {
+    console.log("B");
+}
+else if (studentGradeValue >= 60) {
+    console.log("C");
+}
+else if (studentGradeValue >= 50) {
+    console.log("D");
+}
+else {
+    console.log("F");
+}
 
 
 
@@ -92,7 +101,8 @@ let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "C
 //  Millennium Falcon
 //  CR90 corvette
 
-
+for (const ships of starWarsShips) {
+    console.log(ships); }
 
 //
 // STEP D - Working with arrays and for loops
@@ -112,6 +122,8 @@ let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "C
 // Using the following const array for the next few instructions
 const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeiro', 'Cape Town', 'Dubai', 'Mumbai', 'Moscow'];
 
+for (let i = 0; i < cities.length; i++) {
+     console.log( i, cities[i]); }
 // Using a for loop with manual controls, loop through the above array and console log
 // each city and the current current array index (i value) of the loop
 // Expected output:
@@ -130,7 +142,12 @@ const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeir
 // Expected output:
 //  Found Paris is at index: 1
 
-
+for (let i = 0; i < cities.length; i++) {
+    if (cities[i] === "Paris") {
+        console.log("Found Paris is at index: " + i);
+    }
+  
+}
 
 
 
